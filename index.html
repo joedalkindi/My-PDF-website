@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
-<body style="text-align:center; font-family:Arial; margin-top:100px;">
+<head>
+<title>My Documents</title>
 
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+background:white;
+padding:50px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+text-align:center;
+width:420px;
+}
+
+h2{
+margin-bottom:30px;
+color:#1e3c72;
+font-size:32px;
+}
+
+button{
+display:block;
+width:100%;
+padding:15px;
+margin:12px 0;
+font-size:18px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+color:white;
+transition:0.3s;
+}
+
+.cv{background:#3498db;}
+.training{background:#27ae60;}
+.grades{background:#e67e22;}
+
+button:hover{
+transform:scale(1.05);
+opacity:0.9;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
 <h2>Choose PDF</h2>
 
-<button onclick="window.open('Cv-2.pdf')">CV</button>
+<button class="cv" onclick="window.open('Cv-2.pdf')">📄 CV</button>
 
-<button onclick="window.open('TrainingLetter.pdf')">Training Letter</button>
+<button class="training" onclick="window.open('TrainingLetter.pdf')">📑 Training Letter</button>
 
-<button onclick="window.open('Grades transcript .pdf')">Grades</button>
+<button class="grades" onclick="window.open('Grades transcript .pdf')">🎓 Grades</button>
+</div>
 
 </body>
 </html>
